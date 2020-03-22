@@ -36,7 +36,7 @@ before_script:
   - pwd
   - git clone --no-checkout https://github.com/dremio/arrow arrow
   - git -C arrow fetch -t https://github.com/dremio/arrow rel-420
-  - if [ $CROSSBOW_USE_COMMIT_ID = true ]; then git -C arrow checkout 5f85203374cdc99b9308438e8637f62154bd79e9; else git -C arrow checkout FETCH_HEAD; fi
+  - if [ $CROSSBOW_USE_COMMIT_ID = true ]; then git -C arrow checkout 4408ccd0a77cbd8b028e6a80bec4c85642f07a6a; else git -C arrow checkout FETCH_HEAD; fi
   - export TRAVIS_BUILD_DIR=$TRAVIS_BUILD_DIR/arrow
   - brew update
   - brew install bison flex llvm@7
